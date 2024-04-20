@@ -1,20 +1,28 @@
 {
-  "name": "webchat_ui",
+  "name": "@webchat_com/webchat_ui",
+  "author": "Gleb Li (https://github.com/Gleb001)",
+  "homepage": "https://github.com/WebChat-team/webchat_ui#readme",
   "version": "0.0.1",
+  "license": "MIT",
   "description": "A set of components for creating a user interface in the browser for the WebChat project",
-  "main": "./bundle/cjs/index.js",
-  "types": "./bundle/index.d.ts",
-  "module": "./bundle/esm/index.js",
+  "keywords": [
+    "webchat",
+    "ui"
+  ],
+  "bugs": {
+    "url": "https://github.com/WebChat-team/webchat_ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebChat-team/webchat_ui.git"
+  },
+  "main": "./lib/cjs/index.js",
+  "types": "./lib/index.d.ts",
+  "module": "./lib/esm/index.js",
   "type": "module",
   "files": [
     "bundle"
   ],
-  "scripts": {
-    "build": "rollup --config --bundleConfigAsCjs"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -31,5 +39,11 @@
     "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.6.2"
+  },
+  "scripts": {
+    "build": "rollup --config --bundleConfigAsCjs"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
