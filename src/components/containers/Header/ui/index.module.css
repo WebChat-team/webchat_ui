@@ -1,0 +1,33 @@
+/* header =================================================== */
+.header {
+
+    width: 100%;
+
+    background-color: var(--main-back-color);
+    border-bottom: 1px solid var(--inactive-back-color);    
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+}
+
+/* padding header ------------------------------------------- */
+.header,
+.padding_header {
+    height: 50px;
+}
+
+/* header container ========================================= */
+.header_contaier {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+
+}
+.header_contaier > div {
+    height: 100%;
+}

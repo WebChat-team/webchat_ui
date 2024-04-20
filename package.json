@@ -1,0 +1,35 @@
+{
+  "name": "webchat_ui",
+  "version": "0.0.1",
+  "description": "A set of components for creating a user interface in the browser for the WebChat project",
+  "main": "./bundle/cjs/index.js",
+  "types": "./bundle/index.d.ts",
+  "module": "./bundle/esm/index.js",
+  "type": "module",
+  "files": [
+    "bundle"
+  ],
+  "scripts": {
+    "build": "rollup --config --bundleConfigAsCjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "18.2.79",
+    "@types/react-dom": "18.2.8",
+    "rollup": "^4.15.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.6.2"
+  }
+}

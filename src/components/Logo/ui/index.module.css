@@ -1,0 +1,27 @@
+/* logo ===================================================== */
+.logo {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    color: var(--main-color);
+    font-size: 1em;
+    text-decoration: none;
+
+}
+
+/* logo name ================================================ */
+.logo_name {
+    display: inline;
+}
+
+/* media ==================================================== */
+@media screen and (max-width: 768px) {
+    .logo_name {
+        display: none;
+    }
+}
