@@ -3,10 +3,10 @@ import type { FC, ReactNode } from 'react';
 
 // main ===================================================== //
 interface Props {
-    before: ReactNode | ReactNode[], 
-    after: ReactNode | ReactNode[]
+    wide?: boolean,
+    children: ReactNode | ReactNode[]
 }
-type Header = FC<Readonly<Props>>
+type ContainerFC = FC<Readonly<Props>>
 
 // exports ================================================== //
-export type { Header };
+export type { ContainerFC };

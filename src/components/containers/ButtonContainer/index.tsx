@@ -1,16 +1,21 @@
 // imports =================================================== //
 import React from 'react';
-import getClassName from './helpers/getClassName';
-import type { ButtonContainer } from './types/index.d.ts';
+import type { ButtonContainerFC } from './types';
+import styles from "./ui/index.module.css";
 
 // main ====================================================== //
-const ButtonContainer: ButtonContainer = ({
+const ButtonContainer: ButtonContainerFC = ({
     isRow = false,
     children
 }) => {
 
+    const className = `
+        ${styles.button_container}
+        ${isRow ? styles.row : styles.column}
+    `;
+
     return (
-        <div className={getClassName(isRow)}>
+        <div className={className}>
             {children}
         </div>
     );

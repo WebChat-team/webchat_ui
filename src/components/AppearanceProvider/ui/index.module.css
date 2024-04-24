@@ -1,0 +1,26 @@
+/* themes --------------------------------------------------- */
+.webchat_ui_light {
+
+    --webchatui--background_color: white;
+    --webchatui--background_color_muted: #DCECE2;
+    --webchatui--background_color_active: #29DF63;
+
+    --webchatui--color: black;
+    --webchatui--color_inactive: #A3A3A3;
+    --webchatui--color_active: #29DF63;
+    --webchatui--color_muted: #DCECE2;
+    --webchatui--color_invalid: #df2929;
+
+}
+.webchat_ui_dark {
+
+    --webchatui--background_color: #222223;
+    --webchatui--background_color_muted: #DCECE2;
+
+    --webchatui--color: white;
+    --webchatui--color_inactive: #A3A3A3;
+    --webchatui--color_active: #29DF63;
+    --webchatui--color_muted: #DCECE2;
+    --webchatui--color_invalid: #df2929;
+
+}

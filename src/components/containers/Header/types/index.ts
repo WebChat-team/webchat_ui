@@ -2,11 +2,11 @@
 import type { FC, ReactNode } from 'react';
 
 // main ===================================================== //
-interface Props extends DefaultProps {
-    isRow?: boolean,
-    children: ReactNode[]
+interface Props {
+    before: ReactNode | ReactNode[], 
+    after: ReactNode | ReactNode[]
 }
-type ButtonContainer = FC<Readonly<Props>>
+type HeaderFC = FC<Readonly<Props>>
 
 // exports ================================================== //
-export type { ButtonContainer };
+export type { HeaderFC };

@@ -1,11 +1,11 @@
 // imports =================================================== //
 import React from 'react';
-import Loader from '@/components/Loader';
+import Loader from '../Loader';
 import getClassName from './helpers/getClassName';
-import type { Button } from './types/index.d.ts';
+import type { ButtonFC } from './types';
 
 // main ====================================================== //
-const Button: Button = ({
+const Button: ButtonFC = ({
     isLoading = false,
     wide = false,
     level = "primary",

@@ -1,10 +1,13 @@
 // imports =================================================== //
 import React from 'react';
 import styles from './ui/index.module.css';
-import type { Logo } from './types/index.d.ts';
+import type { LogoFC } from './types';
 
 // main ====================================================== //
-const Logo: Logo = ({ hasName, ...props }) => {
+const Logo: LogoFC = ({
+    hasName,
+    ...props
+}) => {
 
     return (
         <a className={styles.logo} {...props} >

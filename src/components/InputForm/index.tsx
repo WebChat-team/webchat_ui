@@ -1,14 +1,14 @@
 // imports ================================================== //
 import React, { useRef, useState } from "react";
 import Input from "./component/Input";
-import type { InputForm } from "./types";
+import type { InputFormFC } from "./types";
 import styles from "./ui/index.module.css";
-import type { PropsInput } from "@/shared/types";
-import { getInputFormContext } from "./constants/getInputFormContext";
+import type { PropsInput } from "../../shared/types";
+import getInputFormContext from "./constants/getInputFormContext";
 
 // main ===================================================== //
 const InputFormContext = getInputFormContext();
-const InputForm: InputForm = ({
+const InputForm: InputFormFC = ({
     description,
     children,
     ...inputProps
@@ -42,5 +42,6 @@ const InputForm: InputForm = ({
 };
 
 // exports ================================================== //
+export { default as validationInput } from "./constants/validationInput";
 export { InputFormContext };
 export default InputForm;

@@ -2,11 +2,12 @@
 import type { FC, ReactNode } from 'react';
 
 // main ===================================================== //
+type Theme = "light" | "dark"
 interface Props {
-    wide?: boolean,
+    theme?: Theme,
     children: ReactNode | ReactNode[]
 }
-type Container = FC<Readonly<Props>>
+type AppearanceProviderFC = FC<Readonly<Props>>
 
 // exports ================================================== //
-export type { Container };
+export type { AppearanceProviderFC };

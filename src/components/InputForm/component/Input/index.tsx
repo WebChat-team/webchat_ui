@@ -1,20 +1,12 @@
 // imports =================================================== //
-import React from 'react';
 import styles from './ui/index.module.css';
-import { PropsInput } from '@/shared/types';
+import { PropsInput } from '../../../../shared/types';
 import type { ChangeEvent, FocusEvent } from 'react';
-import { forwardRef, useState } from "react";
+import React, { forwardRef, useState } from "react";
 
 // main ====================================================== //
 const Input = forwardRef<HTMLInputElement, PropsInput>(
-    (
-        {
-            onChange,
-            onFocus,
-            ...props
-        },
-        ref
-    ) => {
+    ({ onChange, onFocus, ...props },  ref) => {
 
         const [value, setValue] = useState("");
 

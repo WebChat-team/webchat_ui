@@ -1,14 +1,9 @@
 // imports ================================================== //
 import type {
-    FC,
     DetailedHTMLProps,
     InputHTMLAttributes,
-    HTMLInputElement,
     ButtonHTMLAttributes,
     FormHTMLAttributes,
-    HTMLFormElement,
-    HTMLButtonElement,
-    ReactNode,
     AnchorHTMLAttributes
 } from 'react';
 

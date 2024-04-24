@@ -2,11 +2,11 @@
   "name": "@webchat_com/webchat_ui",
   "author": "Gleb Li (https://github.com/Gleb001)",
   "homepage": "https://github.com/WebChat-team/webchat_ui#readme",
-  "version": "0.0.3",
+  "version": "0.0.13",
   "license": "MIT",
   "description": "A set of components for creating a user interface in the browser for the WebChat project",
   "keywords": [
-    "webchat",
+    "webchatui",
     "ui"
   ],
   "bugs": {
@@ -16,26 +16,27 @@
     "type": "git",
     "url": "git+https://github.com/WebChat-team/webchat_ui.git"
   },
-  "main": "./bundle/cjs/index.js",
-  "types": "./bundle/index.d.ts",
-  "module": "./bundle/esm/index.js",
+  "main": "./bundle/lib/cjs/index.min.js",
+  "types": "./bundle/lib/index.d.ts",
+  "module": "./bundle/lib/esm/index.min.js",
   "type": "module",
-  "files": [
-    "bundle"
-  ],
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/react": "18.2.79",
-    "@types/react-dom": "18.2.8",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "rollup": "^4.15.0",
     "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.6.2"

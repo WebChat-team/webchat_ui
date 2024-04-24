@@ -3,13 +3,13 @@ interface Validation {
     pattern: string,
     message: string,
 }
-interface Validations {
+interface ValidationInput {
     password: Validation,
     [key: string]: Validation
 }
 
 // main ===================================================== //
-const VALIDATIONS: Validations = {
+const validationInput: ValidationInput = {
 
     // I found this regular expression on
     // https://uibakery.io/regex-library/email
@@ -45,4 +45,4 @@ const VALIDATIONS: Validations = {
 };
 
 // export =================================================== //
-export default VALIDATIONS;
+export default validationInput;

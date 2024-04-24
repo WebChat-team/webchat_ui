@@ -1,13 +1,23 @@
 // containers
-export { default as ButtonContainer  } from "@components/containers/ButtonContainer/index";
-export { default as Container        } from "@components/containers/Container/index";
-export { default as Header           } from "@components/containers/Header/index";
+export { default as ButtonContainer    } from "./components/containers/ButtonContainer";
+export { default as Container          } from "./components/containers/Container";
+export { default as Header             } from "./components/containers/Header";
+
+// providers
+export { default as AppearanceProvider } from "./components/AppearanceProvider"
 
 // any components
-export { default as Button           } from "@components/Button/index";
-export { default as Loader           } from "@components/Loader/index";
-export { default as Logo             } from "@components/Logo/index";
-export {
-    default as InputForm,
-    InputFormContext
-} from "@components/InputForm";
+export { default as Button             } from "./components/Button";
+export { default as Loader             } from "./components/Loader";
+export { default as Logo               } from "./components/Logo";
+export { default as InputForm,
+         InputFormContext,
+         validationInput               } from "./components/InputForm";
+
+// shared types
+export type {
+    PropsForm,
+    PropsInput,
+    PropsButton,
+    PropsAnchor
+} from "./shared/types";

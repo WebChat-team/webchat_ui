@@ -8,7 +8,7 @@
     box-sizing: border-box;
     padding: 0 6px;
 
-    background-color: var(--main-back-color);
+    background-color: var(--webchatui--background_color);
 
 }
 
@@ -23,14 +23,14 @@
     justify-content: space-between;
     gap: 10px;
 
-    background-color: var(--main-back-color);
+    background-color: var(--webchatui--background_color);
 
     box-sizing: border-box;
     padding: 2px 10px 2px 21px;
 
     position: relative;
 
-    border: 1px solid var(--default-color);
+    border: 1px solid var(--webchatui--color_inactive);
     border-radius: 15px;
 
     cursor: pointer;
@@ -42,13 +42,13 @@
 /* statuses label ------------------------------------------- */
 /* wrong input */
 .label:has(input:not([value=""]):invalid) {
-    border-color: var(--invalid-color);
+    border-color: var(--webchatui--color_muted);
 }
 /* success input */
 .label:has(input:valid) {
-    border-color: var(--active-color);
+    border-color: var(--webchatui--color_active);
 }
 /* type input */
 .label:has(input:focus[value=""]) {
-    border-color: var(--main-color);
+    border-color: var(--webchatui--color);
 }

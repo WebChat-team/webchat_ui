@@ -1,10 +1,20 @@
 // imports ================================================== //
 import type { LevelButton } from '../types';
-import classNamesByTypeButton from '../constants/classNames';
 import styles from '../ui/index.module.css';
 
 // types ==================================================== //
-type getClassName = (wide: boolean, level: LevelButton, className?: string) => string
+type getClassName = (
+    wide: boolean,
+    level: LevelButton,
+    className?: string
+) => string
+
+// constants ================================================ //
+const classNamesByTypeButton = {
+    "primary": styles.primary,
+    "secondary": styles.secondary,
+    "tertiary": styles.tertiary
+};
 
 // main ===================================================== //
 const getClassName: getClassName = (wide, level, className) => (

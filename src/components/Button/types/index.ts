@@ -1,6 +1,6 @@
 // imports ================================================== //
-import type { PropsButton } from '@/shared/types';
-import type { FC, ReactNode } from 'react';
+import type { PropsButton } from '../../../shared/types';
+import type { FC, ReactNode, HTMLAttributes } from 'react';
 
 // main ===================================================== //
 type LevelButton = "primary" | "secondary" | "tertiary"
@@ -12,7 +12,7 @@ interface Props {
     children: ReactNode | ReactNode[]
 }
 
-type Button = FC<Readonly<PropsButton & Props>>
+type ButtonFC = FC<Readonly<PropsButton & Props>>
 
 // exports ================================================== //
-export type { Button, LevelButton };
+export type { ButtonFC, LevelButton };

@@ -1,7 +1,7 @@
 /* button =================================================== */
 .button {
 
-    color: var(--main-color);
+    color: var(--webchatui--color);
     text-transform: lowercase;
     font-size: 1em;
 
@@ -22,33 +22,33 @@
 /* by color */
 .primary {
 
-    background-color: var(--active-back-color);
-    border: 1px solid var(--active-color);
+    background-color: var(--webchatui--background_color_active);
+    border: 1px solid var(--webchatui--color_active);
 
     transition: background-color .3s linear;
 
 }
 .primary:disabled {
-    background-color: var(--inactive-back-color);
-    color: var(--default-color); 
+    background-color: var(--webchatui--background_color_muted);
+    color: var(--webchatui--color_inactive); 
 }
 .primary:not(:disabled):hover {
-    background-color: var(--inactive-back-color);
+    background-color: var(--webchatui--background_color_muted);
 }
 
 .secondary {
 
-    background-color: var(--inactive-back-color);
-    border: 1px solid var(--default-color);
+    background-color: var(--webchatui--background_color_muted);
+    border: 1px solid var(--webchatui--color_inactive);
 
     transition: border .3s linear;
 
 }
 .secondary:disabled {
-   color: var(--default-color); 
+   color: var(--webchatui--color_inactive); 
 }
 .secondary:not(:disabled):hover {
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--webchatui--color);
 }
 
 .tertiary {
@@ -60,10 +60,10 @@
 
 }
 .tertiary:disabled {
-   color: var(--default-color); 
+   color: var(--webchatui--color_inactive); 
 }
 .tertiary:not(:disabled):hover {
-    background-color: var(--inactive-back-color);
+    background-color: var(--webchatui--background_color_muted);
 }
 
 /* by width */

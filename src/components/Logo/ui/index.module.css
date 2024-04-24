@@ -8,7 +8,7 @@
     box-sizing: border-box;
     padding: 10px;
 
-    color: var(--main-color);
+    color: var(--webchatui--color);
     font-size: 1em;
     text-decoration: none;
 

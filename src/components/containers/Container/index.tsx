@@ -1,16 +1,21 @@
 // imports =================================================== //
 import React from 'react';
-import type { Container } from './types/index.d.ts';
-import getClassName from './helpers/getClassName';
+import type { ContainerFC } from './types';
+import styles from "./ui/index.module.css";
 
 // main ====================================================== //
-const Container: Container = ({
+const Container: ContainerFC = ({
     wide = false,
     children
  }) => {
 
+    const className = `
+        ${styles.container}
+        ${wide ? styles.wide : styles.default}
+    `
+
     return (
-        <div className={getClassName(wide)}>
+        <div className={className}>
             {children}
         </div>
     );

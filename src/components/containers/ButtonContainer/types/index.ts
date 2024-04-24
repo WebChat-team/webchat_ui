@@ -1,12 +1,12 @@
 // imports ================================================== //
-import type { PropsAnchor } from "@/shared/types";
-import type { FC } from "react";
+import type { FC, ReactNode } from 'react';
 
 // main ===================================================== //
 interface Props {
-    hasName: boolean
+    isRow?: boolean,
+    children: ReactNode[]
 }
-type Logo = FC<Readonly<PropsAnchor & Props>>
+type ButtonContainerFC = FC<Readonly<Props>>
 
 // exports ================================================== //
-export type { Logo };
+export type { ButtonContainerFC };

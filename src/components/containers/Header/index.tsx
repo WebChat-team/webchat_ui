@@ -1,11 +1,14 @@
 // imports =================================================== //
 import React from 'react';
 import styles from './ui/index.module.css';
-import type { Header } from './types/index.d.ts';
-import Container from '@components/containers/Container';
+import type { HeaderFC } from './types';
+import Container from '../Container';
 
 // main ====================================================== //
-const Header: Header = ({ before, after }) => {
+const Header: HeaderFC = ({
+    before,
+    after
+}) => {
 
     return (
         <>

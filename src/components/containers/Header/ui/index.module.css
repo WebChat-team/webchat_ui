@@ -3,8 +3,8 @@
 
     width: 100%;
 
-    background-color: var(--main-back-color);
-    border-bottom: 1px solid var(--inactive-back-color);    
+    background-color: var(--webchatui--background_color);
+    border-bottom: 1px solid var(--webchatui--background_color_muted);    
 
     position: fixed;
     left: 0;
