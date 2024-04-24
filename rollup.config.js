@@ -59,8 +59,10 @@ const rollupConfig = [
                 targets: [
                     "./bundle/lib/cjs/components",
                     "./bundle/lib/cjs/shared",
+                    "./bundle/lib/cjs/index.d.ts",
                     "./bundle/lib/esm/components",
-                    "./bundle/lib/esm/shared"
+                    "./bundle/lib/esm/shared",
+                    "./bundle/lib/esm/index.d.ts"
                 ],
                 hook: "buildEnd"
             })
