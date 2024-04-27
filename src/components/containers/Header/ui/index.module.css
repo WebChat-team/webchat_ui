@@ -1,4 +1,3 @@
-/* header =================================================== */
 .header {
 
     width: 100%;
@@ -12,14 +11,14 @@
 
 }
 
-/* padding header ------------------------------------------- */
 .header,
 .padding_header {
     height: 50px;
 }
 
-/* header container ========================================= */
-.header_contaier {
+
+
+.header_container {
 
     display: flex;
     align-items: center;
@@ -28,6 +27,6 @@
     height: 100%;
 
 }
-.header_contaier > div {
+.header_container > div {
     height: 100%;
 }

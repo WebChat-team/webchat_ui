@@ -8,6 +8,10 @@ import getInputFormContext from "./constants/getInputFormContext";
 
 // main ===================================================== //
 const InputFormContext = getInputFormContext();
+/**
+ * Компонент-поле для ввода данных пользователя.
+ * @param {string} props.description описание поля.
+ */
 const InputForm: InputFormFC = ({
     description,
     children,

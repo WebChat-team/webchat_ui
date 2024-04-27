@@ -1,4 +1,3 @@
-/* name input =============================================== */
 .description_input {
 
     position: absolute;
@@ -12,7 +11,8 @@
 
 }
 
-/* label ==================================================== */
+
+
 .label {
     
     width: 100%;
@@ -39,16 +39,12 @@
 
 }
 
-/* statuses label ------------------------------------------- */
-/* wrong input */
 .label:has(input:not([value=""]):invalid) {
     border-color: var(--webchatui--color_muted);
 }
-/* success input */
 .label:has(input:valid) {
     border-color: var(--webchatui--color_active);
 }
-/* type input */
 .label:has(input:focus[value=""]) {
     border-color: var(--webchatui--color);
 }

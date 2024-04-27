@@ -14,7 +14,7 @@ const Header: HeaderFC = ({
         <>
             <header className={styles.header}>
                 <Container>
-                    <div className={styles.header_contaier}>
+                    <div className={styles.header_container}>
                         <div>
                             {before}
                         </div>

@@ -1,4 +1,3 @@
-/* button =================================================== */
 .button {
 
     color: var(--webchatui--color);
@@ -17,9 +16,7 @@
     cursor: not-allowed;
 }
 
-/* types button --------------------------------------------- */
 
-/* by color */
 .primary {
 
     background-color: var(--webchatui--background_color_active);
@@ -66,7 +63,7 @@
     background-color: var(--webchatui--background_color_muted);
 }
 
-/* by width */
+
 .wide {
     width: 100%;
 }

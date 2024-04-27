@@ -27,7 +27,7 @@ type PropsButton = DetailedHTMLProps<
     HTMLButtonElement
 >
 
-// logo
+// anchor
 type PropsAnchor = DetailedHTMLProps<
     AnchorHTMLAttributes<HTMLAnchorElement>,
     HTMLAnchorElement

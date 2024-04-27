@@ -36,7 +36,7 @@ const rollupConfig = [
                 modules: true
             }),
             cleanup({
-                comments: "istanbul",
+                comments: ["istanbul", "jsdoc"],
                 extensions: ["js", "ts"]
             }),
             typescript({

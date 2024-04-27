@@ -19,7 +19,7 @@ const classNamesByTypeButton = {
 // main ===================================================== //
 const getClassName: getClassName = (wide, level, className) => (
     `
-        ${className}
+        ${className ? className : ""}
         ${styles.button}
         ${classNamesByTypeButton[level]} 
         ${wide && styles.wide}
